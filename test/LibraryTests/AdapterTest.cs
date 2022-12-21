@@ -3,16 +3,21 @@ using NUnit.Framework;
 using System;
 
 namespace AdapterTests
-{
+{   
+    /// <summary>
+    ///  Testea el adaptador.
+    /// </summary>
+   
+   
     public class AdapterTest
     {   
         /// <summary>
-        /// Testa plug encendido.
+        /// Testea plug encendido.
         /// </summary>
 
         
         [Test]
-        public void Test1()
+        public void TestEncendido()
         {
             // Arrange
             var plug = new Plug("1");
@@ -30,7 +35,7 @@ namespace AdapterTests
         /// Testa plug apagado.
         /// </summary>
         [Test]
-        public void Test2()
+        public void TestApagado()
         {
             // Arrange
             var plug = new Plug("1");
@@ -46,7 +51,10 @@ namespace AdapterTests
         }
 
         [Test]
-        public void Test3()
+       /// <summary>
+       /// Testea plug encendido y apagado.
+       /// </summary>
+        public void TestONandOFF()
         {
             // Arrange
             var plug = new Plug("1");
@@ -62,9 +70,12 @@ namespace AdapterTests
             // Assert
             Assert.AreEqual(expected, actual);
         }
-
+        /// <summary>
+        ///  Testea encendido de bulb.
+        /// </summary>
+        
         [Test]
-        public void Test4()
+        public void TestEncendidoBulb()
         {
             // Arrange
             var bulb = new Bulb("1");
@@ -79,7 +90,11 @@ namespace AdapterTests
         }
 
         [Test]
-        public void Test5()
+       /// <summary>
+       ///  Testea apagado de bulb.
+       /// </summary>
+       
+        public void TestApagadoBulb()
         {
             // Arrange
             var bulb = new Bulb("1");
@@ -94,7 +109,10 @@ namespace AdapterTests
         }
 
         [Test]
-        public void Test6()
+       /// <summary>
+       /// Testea encendido y apagado de bulb.
+       /// </summary>
+        public void TestONandOFBulb()
         {
             // Arrange
             var bulb = new Bulb("1");
@@ -111,7 +129,10 @@ namespace AdapterTests
         }
 
         [Test]
-        public void Test7()
+       /// <summary>
+       /// Testea encendido de washing machine.
+       /// </summary>
+        public void TestEncendidowashinMachine()
         {
             // Arrange
             var washingMachine = new WashingMachine("1");
